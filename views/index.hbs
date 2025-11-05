@@ -1,10 +1,10 @@
 <h1>Hmm</h1>
 <h3>Ask a question?</h3>
-<form action="" method="POST">
-    <textarea></textarea>
+<form action="/question" method="POST">
+    <textarea name="body" required></textarea>
     <button type="submit">Submit</button>
 </form>
 <h3>Answer a question</h3>
-{{#each question}}
-    <a href="/question?id={{this.id}}">{{this}}</a>
+{{#each questions}}
+    <a href="/question?id={{this.questionid}}">{{this.description}}</a>
 {{/each}}
