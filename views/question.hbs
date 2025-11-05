@@ -1,1 +1,11 @@
 <h1>ID: {{id}}</h1>
+<p>Answer the question:</p>
+<form action="/answer" method="POST">
+  <input type="hidden" name="id" value="{{id}}">
+  <textarea name="answer" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+<h3>Other answers</h3>
+{{#each answers}}
+    <p></p>
+{{/each}}

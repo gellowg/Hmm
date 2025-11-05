@@ -4,7 +4,7 @@ const pool = new Pool({
   user: 'postgres',
   password: 'OePAFTNOCbMMvdhSEXmvNTzJdHgPVIjA',
   host: 'switchback.proxy.rlwy.net',
-  port: 41615, // default Postgres port
+  port: 41615,
   database: 'railway'
 });
 

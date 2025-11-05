@@ -6,5 +6,5 @@
 </form>
 <h3>Answer a question</h3>
 {{#each question}}
-    <div>{{this}}</div>
+    <a href="/question?id={{this.id}}">{{this}}</a>
 {{/each}}
